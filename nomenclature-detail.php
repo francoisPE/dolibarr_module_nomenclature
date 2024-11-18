@@ -271,8 +271,8 @@ function _getDetails(&$object, $object_type) {
 
 			}
 
-            if(!empty($nomenclature->TNomenclatureWorkstationCombined)) {
-				foreach($nomenclature->TNomenclatureWorkstationCombined as $fk_ws => $ws) {
+            if(!empty($nomenclature->TNomenclatureWorkstation)) {
+				foreach($nomenclature->TNomenclatureWorkstation as $fk_ws => $ws) {
 					if(isset($TWorkstation[$fk_ws])) {
 						$TWorkstation[$fk_ws]->nb_hour += $ws->nb_hour;
 						$TWorkstation[$fk_ws]->nb_hour_prepare += $ws->nb_hour_prepare;
